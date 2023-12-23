@@ -1,10 +1,10 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View, Text } from 'react-native';
 
 const Page = () => {
   return (
     <View>
-      <Text>Home</Text>
+      <Text>Favorite</Text>
     </View>
   );
 };
