@@ -9,7 +9,7 @@ const Layout = () => {
     <Stack
       screenOptions={{
         headerStyle: {
-          backgroundColor: theme.purple8.get(),
+          backgroundColor: theme.orange9.get(),
         },
         headerTintColor: '#fff',
       }}>

@@ -8,7 +8,7 @@ const _layout = () => {
       screenOptions={{
         headerShown: true,
         drawerHideStatusBarOnOpen: false,
-        drawerActiveBackgroundColor: colorTokens.dark.purple.purple8,
+        drawerActiveBackgroundColor: colorTokens.dark.orange.orange9,
         drawerActiveTintColor: '#fff',
         drawerLabelStyle: { marginLeft: -20 },
       }}>

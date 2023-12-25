@@ -6,6 +6,8 @@ import { TamaguiProvider, Button, Text, Theme } from 'tamagui';
 
 import config from '../tamagui.config';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClient } from '@/queryClient';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -27,9 +29,11 @@ export default function Layout() {
   return (
     <TamaguiProvider config={config}>
       <GestureHandlerRootView style={{ flex: 1 }}>
-        <Theme name={'purple'}>
-          <Slot />
-        </Theme>
+        <QueryClientProvider client={queryClient}>
+          <Theme name={'orange'}>
+            <Slot />
+          </Theme>
+        </QueryClientProvider>
       </GestureHandlerRootView>
     </TamaguiProvider>
   );
