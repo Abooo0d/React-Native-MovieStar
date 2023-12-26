@@ -6,7 +6,7 @@ import { View, Text } from 'react-native';
 
 const Page = () => {
   const { id } = useLocalSearchParams<{ id: string }>();
-  return <DetailsPage id={id} mediaType={MediaType.Movie} />;
+  return <DetailsPage id={id} mediaType={MediaType.Tv} />;
 };
 
 export default Page;

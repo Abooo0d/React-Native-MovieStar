@@ -27,6 +27,6 @@ export interface ResultItem {
   origin_country?: string[];
 }
 export enum MediaType {
-  Movie ="Movie",
-  Tv = "Tv"
+  Movie ="movie",
+  Tv = "tv"
 }

@@ -17,13 +17,20 @@ const Layout = () => {
         name="index"
         options={{
           title: 'MovieStar',
+          headerTitleAlign: 'center',
           headerLeft: () => <DrawerToggleButton tintColor="#fff" />,
         }}
       />
       <Stack.Screen
         name="Movie/[id]"
         options={{
-          title: 'Movie',
+          title: 'Movie Details',
+        }}
+      />
+      <Stack.Screen
+        name="Tv/[id]"
+        options={{
+          title: 'Show Details',
         }}
       />
     </Stack>

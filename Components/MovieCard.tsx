@@ -1,6 +1,7 @@
 import { ResultItem } from '@/Interfaces/apiresults';
 import { themes } from '@tamagui/themes';
 import { Link } from 'expo-router';
+import Animated from 'react-native-reanimated';
 import { Card, CardFooter, CardHeader, Image, Paragraph, Text, Theme, YStack } from 'tamagui';
 
 type MovieCardProps = {
@@ -8,7 +9,9 @@ type MovieCardProps = {
 };
 const MovieCard = ({ movie }: MovieCardProps) => (
   //TODO Add The Tv Type
-  <Link href={`/(drawer)/(home)/Movie/${movie.id}`} asChild>
+  <Link
+    href={`/(drawer)/(home)/${movie.media_type === 'movie' ? 'Movie' : 'Tv'}/${movie.id}`}
+    asChild>
     <Card
       elevate
       width={150}
@@ -18,7 +21,7 @@ const MovieCard = ({ movie }: MovieCardProps) => (
       pressStyle={{ scale: 0.975 }}
       animation={'bouncy'}>
       <CardHeader p={0}>
-        <Image
+        <Animated.Image
           source={{ uri: `https://image.tmdb.org/t/p/w200${movie.poster_path}` }}
           alt={movie.title}
           style={{ width: 150, height: 200 }}
