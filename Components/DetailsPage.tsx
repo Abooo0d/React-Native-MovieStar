@@ -41,6 +41,8 @@ const DetailsPage = ({ id, mediaType }: DetailsPros) => {
                 width: 200,
                 height: 300,
                 borderRadius: 10,
+                borderWidth: 3,
+                borderColor: '#fff',
               }}
             />
             <View style={{ paddingVertical: 20, marginLeft: -10 }}>

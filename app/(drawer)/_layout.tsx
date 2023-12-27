@@ -25,9 +25,7 @@ const _layout = () => {
         options={{
           title: 'Favorite',
           headerShown: false,
-          drawerIcon: ({ color, size }) => (
-            <Ionicons name="star-outline" size={size} color={color} />
-          ),
+          drawerIcon: ({ color, size }) => <Ionicons name="star" size={size} color={color} />,
         }}
       />
     </Drawer>
